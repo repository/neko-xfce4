@@ -4,7 +4,7 @@ COPY xfce4/ /home/neko/.config/xfce4/
 
 RUN set -eux; apt-get update; \
     chown -R neko:neko /home/neko/.config/xfce4/ ; \
-    apt-get install --no-install-recommends --allow-unauthenticated -f -y xfce4 firefox-esr mpv xterm sudo; \
+    apt-get install --no-install-recommends --allow-unauthenticated -f -y xfce4 firefox-esr fonts-takao-mincho mpv xterm sudo; \
     # firefox extensions
     mkdir -p /usr/lib/firefox-esr/distribution/extensions; \
     wget -O /usr/lib/firefox-esr/distribution/extensions/uBlock0@raymondhill.net.xpi https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi; \
