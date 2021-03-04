@@ -17,3 +17,5 @@ COPY autoconfig.js /usr/lib/firefox-esr/defaults/pref/autoconfig.js
 COPY policies.json /usr/lib/firefox-esr/distribution/policies.json
 COPY supervisord.conf /etc/neko/supervisord/xfce4.conf
 COPY default.pa /etc/pulse/default.pa
+
+RUN chmod +x /home/neko/Desktop/*.desktop
