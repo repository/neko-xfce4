@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=mpv
+Comment=Play movies and songs
+Exec=mpv --player-operation-mode=pseudo-gui -- %U
+Icon=mpv
+Path=
+Terminal=false
+StartupNotify=false
